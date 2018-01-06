@@ -1,0 +1,20 @@
+# Connect to your instance:
+ssh -i /Users/vinod/.ssh/aws-key-fast-ai.pem ubuntu@ec2-52-40-148-113.us-west-2.compute.amazonaws.com
+# Stop your instance: :
+aws ec2 stop-instances --instance-ids i-0f78b4a55176902e4
+# Start your instance:
+aws ec2 start-instances --instance-ids i-0f78b4a55176902e4
+# Reboot your instance:
+aws ec2 reboot-instances --instance-ids i-0f78b4a55176902e4
+export instanceId=i-0f78b4a55176902e4
+export subnetId=subnet-d807e3be
+export securityGroupId=sg-89842cf3
+export instanceUrl=ec2-52-40-148-113.us-west-2.compute.amazonaws.com
+export routeTableId=rtb-ab7d22cd
+export name=fast-ai
+export vpcId=vpc-41c90327
+export internetGatewayId=igw-db2bafbc
+export subnetId=subnet-d807e3be
+export allocAddr=eipalloc-85dd3ab8
+export assocId=eipassoc-e02721dd
+export routeTableAssoc=rtbassoc-befdccc7
